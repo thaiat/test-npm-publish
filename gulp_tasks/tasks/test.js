@@ -31,7 +31,7 @@ gulp.task('mocha', 'Runs mocha unit tests.', function(done) {
                     timeout: constants.mocha.timeout
                 }))
                 .pipe(istanbul.writeReports({
-                    reporters: ['lcov', 'json', 'text', 'text-summary', 'cobertura']
+                    reporters: ['lcovonly', 'json', 'text', 'text-summary', 'cobertura']
                 }))
                 .once('end', function() {
                     //process.exit();
