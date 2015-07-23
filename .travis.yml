@@ -10,13 +10,12 @@ cache:
 
 before_script:
   - npm install -g gulp
-  - npm install --save-dev codeclimate-test-reporter
 
 after_success:
 #  - mv coverage/cobertura-coverage.xml shippable/codecoverage/coverage.xml
 #  - cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js --verbose
 #  - cat ./coverage/lcov.info | codeclimate
-  - CODECLIMATE_REPO_TOKEN=$CODECLIMATE_REPO_TOKEN codeclimate < ./coverage/lcov.info
+  - CODECLIMATE_REPO_TOKEN=$CODECLIMATE_REPO_TOKEN ./node_modules/codeclimate-test-reporter/bin/codeclimate.js < ./coverage/lcov.info
 
 
 deploy:
