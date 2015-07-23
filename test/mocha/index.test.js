@@ -9,4 +9,11 @@ describe('index.js', function() {
             assert(retval === 5);
         });
     });
+
+    describe('sub', function() {
+        it('should succeed', function() {
+            var retval = lib.sub(10, 2);
+            assert(retval === 8);
+        });
+    });
 });
