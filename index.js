@@ -5,5 +5,8 @@ module.exports = {
     },
     sub: function(a, b) {
         return a - b;
-    }
+    },
+    multiply: function(a, b) {
+        return a * b;
+    };
 };
