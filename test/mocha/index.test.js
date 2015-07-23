@@ -16,4 +16,11 @@ describe('index.js', function() {
             assert(retval === 8);
         });
     });
+
+    describe('multiply', function() {
+        it('should succeed', function() {
+            var retval = lib.multiply(5, 3);
+            assert(retval === 15);
+        });
+    });
 });
