@@ -1,6 +1,6 @@
 {
   "name": "test-npm-publish",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "test-npm-publish",
   "main": "index.js",
   "scripts": {
